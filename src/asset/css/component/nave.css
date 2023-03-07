@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav.navebar {
+    width: 100%;
+    height: 85px;
+    box-shadow: rgb(210 210 210) 0px 5px 15px;
+    overflow: hidden;
+}
+.navebar .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.logo,.lnks,.btns,.lnks ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+.logo,.btns{
+    width: 20%;
+}
+.lnks{
+    width: 60%;
+}
+.btns button{
+    padding: 8px 40px;
+    border: 0;
+    border-radius: 10px;
+    background: #0386c6;
+    color: white;
+    transition: all 0.3s;
+    box-shadow: rgb(3 134 198) 0px 4px 5px;
+}
+.btns button:hover{
+    box-shadow: rgb(3 134 198) 0px 5px 15px;
+
+
+}
+
+.logo img{
+    width: auto;
+    max-width: 130px;
+}
+.lnks ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ 
+}
+.lnks ul li{
+    margin: 10px;
+}
+.lnks ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0386c6;
+}
+.mobicon{
+    display: none;
+}
+@media (max-width:900px){
+        .mobicon{
+            width: 80%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .mobicon button{
+            background: none;
+    border: 0;
+    transform: rotate(90deg);
+    font-size: 20px;
+    font-weight: bolder;
+    color: #097cb1;
+        }
+        .navemob .btns, .navemob .lnks{
+            display: none;
+        }
+    }

@@ -1,8 +1,29 @@
 import React from 'react'
-
-const NavBar = () => {
+import '../asset/css/component/nave.css'
+const NavBar = ({logo,dir,lnks,siteName}) => {
   return (
-    <div>NavBar</div>
+    <nav dir={dir} className='navebar navemob'>
+      <div className='container'>
+      <div className='logo'><img src={logo} alt={siteName}/></div>
+      <div className='mobicon'>
+      <button >|||</button>
+      </div>
+      <div className='lnks'>
+        <ul>
+        {lnks?.map((urls)=>{
+          return(
+            <li><a href={urls.url}>{urls.name}</a></li>
+          )
+        })}
+
+        </ul>
+      </div>
+      <div className='btns'>
+        <button>Connect</button>
+      </div>
+      </div>
+
+    </nav>
   )
 }
 
