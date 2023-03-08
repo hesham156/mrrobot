@@ -1,6 +1,6 @@
 import React from 'react'
 import '../asset/css/component/nave.css'
-const NavBar = ({logo,dir,lnks,siteName}) => {
+const NavBar = ({setLang,logo,dir,lnks,siteName}) => {
   return (
     <nav dir={dir} className='navebar navemob'>
       <div className='container'>
@@ -12,7 +12,7 @@ const NavBar = ({logo,dir,lnks,siteName}) => {
         <ul>
         {lnks?.map((urls)=>{
           return(
-            <li><a href={urls.url}>{urls.name}</a></li>
+            <li key={lnks.indexOf(urls)}><a href={urls.url}>{urls.name}</a></li>
           )
         })}
 
@@ -20,6 +20,7 @@ const NavBar = ({logo,dir,lnks,siteName}) => {
       </div>
       <div className='btns'>
         <button>Connect</button>
+        <button onClick={()=>{setLang(dir==="rtl"?"en":"ar")}}>{dir==="rtl"?"en":"ar"}</button>
       </div>
       </div>
 
