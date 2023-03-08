@@ -29,18 +29,50 @@ nav.navebar {
     width: 60%;
 }
 .btns button{
-    padding: 8px 40px;
-    border: 0;
-    border-radius: 10px;
-    background: #0386c6;
-    color: white;
-    transition: all 0.3s;
-    box-shadow: rgb(3 134 198) 0px 4px 5px;
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 400;
+    position: relative;
+    border: 1px solid var(--primary-color);
+    min-width: 200px;
+    height: 55px;
+    border-radius: 40px;
+    transition: all 0.35s ease 0s;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-left: 16px;
+    overflow: hidden;
+    background-color: transparent;
 }
 .btns button:hover{
     box-shadow: rgb(3 134 198) 0px 5px 15px;
+    background-color:#0386c6;
+    color: white;
 
 
+}
+.btns button:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid var(--primary-color);
+    text-decoration: none;
+}
+.btns button::before {
+    content: "";
+    background: var(--primary-color);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    height: 0px;
+    border-radius: 50% 50% 0px 0px / 75% 75% 0px 0px;
+    transition: height 0.35s ease 0s;
+}
+.btns button:hover::before {
+    height: 200%;
 }
 
 .logo img{
@@ -84,3 +116,4 @@ nav.navebar {
             display: none;
         }
     }
+ 

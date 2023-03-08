@@ -1,3 +1,6 @@
+:root{
+--primary-color:rgb(3 134 198);
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@keyframes logo-loop {
+  0%{
+    transform: translate(0,0);
+  }
+  100%{
+    transform: translate(-50%,0);
+
+  }
+}
+.logo-loop {
+  width: max-content;
+  max-width: none;
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: logo-loop 70s linear infinite;
+}
+.logo-loop img {
+  height: 35px;
+  margin: 10px 30px;
+}
+section{
+  position: relative;
+    overflow: hidden;
+    background: var(--primary-color);
+    width: 100%;
+    height: 72px;
 }

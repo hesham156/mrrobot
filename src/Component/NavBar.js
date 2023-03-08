@@ -20,7 +20,7 @@ const NavBar = ({setLang,logo,dir,lnks,siteName}) => {
       </div>
       <div className='btns'>
         <button>Connect</button>
-        <button onClick={()=>{setLang(dir==="rtl"?"en":"ar")}}>{dir==="rtl"?"en":"ar"}</button>
+        {/* <a onClick={()=>{setLang(dir==="rtl"?"en":"ar")}}>{dir==="rtl"?"en":"ar"}</a> */}
       </div>
       </div>
 
