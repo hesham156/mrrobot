@@ -1,3 +1,8 @@
+@import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
+@font-face {
+  font-family: myFirstFont;
+  src: url('./asset/font/mr-robot/MR\ ROBOT.ttf');
+}
 :root{
 --primary-color:rgb(3 134 198);
 }
@@ -70,4 +75,14 @@ section{
     background: var(--primary-color);
     width: 100%;
     height: 72px;
+}
+.Content {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

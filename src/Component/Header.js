@@ -4,8 +4,20 @@ import Ani from './Ani'
 const Header = () => {
   return (
     <header className='header'>
-        <div className='container'>
+        <div className='container position-relative overflow-hidden d-flex justify-content-center align-items-center'>
         <Ani/>
+        <div className='Content flex-column '>
+          <h1 style={{'font-family':'myFirstFont','color': '#03a7dd'}} className='text-center'>MR. Robot</h1>
+          <br/>
+          <h2 className='text-center'>
+12 YEARS OF INNOVATION
+AND STILL COUNTING</h2>
+<div className='btns h-25 '>
+          <button>X</button>
+          <button>Y</button>
+        </div>
+        </div>
+      
         </div>
     </header>
   )
