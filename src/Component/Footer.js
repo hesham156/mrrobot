@@ -1,6 +1,7 @@
 import React from 'react'
+import '../asset/css/component/footer.css'
 
-const Footer = () => {
+const Footer = ({lnks}) => {
   return (
     <footer data-aos="fade-up" className='footer'>
       <div className='container d-flex justify-content-center align-items-center'>
@@ -9,11 +10,11 @@ const Footer = () => {
         </div>
         <div>
           <ul>
-            <li>h</li>
-            <li>h</li>
-            <li>h</li>
-            <li data-aos="fade-up">h</li>
-
+          {lnks?.map((urls)=>{
+          return(
+            <li key={lnks.indexOf(urls)}><a href={urls.url}>{urls.name}</a></li>
+          )
+        })}
           </ul>
         </div>
         <div>

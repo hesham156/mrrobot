@@ -13,8 +13,8 @@ const Header = () => {
 12 YEARS OF INNOVATION
 AND STILL COUNTING</h2>
 <div className='btns h-25 '>
-          <button>X</button>
-          <button>Y</button>
+          <button>تواصل معنا</button>
+          <button style={{background:"var(--primary-color)",color:"White"}}>ابداء الان</button>
         </div>
         </div>
       

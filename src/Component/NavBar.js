@@ -1,8 +1,8 @@
 import React from 'react'
 import '../asset/css/component/nave.css'
-const NavBar = ({setLang,logo,dir,lnks,siteName}) => {
+const NavBar = ({logo,lnks,siteName}) => {
   return (
-    <nav dir={dir} className='navebar navemob'>
+    <nav dir='RTL' className='navebar navemob'>
       <div className='container'>
       <div className='logo'><img src={logo} alt={siteName}/></div>
       <div className='mobicon'>
