@@ -60,6 +60,7 @@ Aos.init()
      <Section3/>
      <Section4/>
      <Section5/> */}
+    
      <Footer lnks={lnks}/>
     </>
   );
