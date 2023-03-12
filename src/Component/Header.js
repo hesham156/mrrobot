@@ -3,8 +3,8 @@ import Ani from './Ani'
 
 const Header = () => {
   return (
-    <header className='header'>
-        <div className='container position-relative overflow-hidden d-flex justify-content-center align-items-center'>
+    <header className='header' style={{    height:'60'+'vh'}}>
+        <div className='container position-relative overflow-hidden d-flex justify-content-center align-items-center h-100'>
         <Ani/>
         <div className='Content flex-column '>
           <h1 style={{'font-family':'myFirstFont','color': '#03a7dd'}} className='text-center'>MR. Robot</h1>
