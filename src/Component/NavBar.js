@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../asset/css/component/nave.css'
 const NavBar = ({logo,lnks,siteName}) => {
+  const [activate,setActivate] = useState(false)
   return (
     <nav dir='RTL' className='navebar navemob'>
       <div className='container'>
       <div className='logo'><img src={logo} alt={siteName}/></div>
       <div className='mobicon'>
-      <button >|||</button>
+      <button onClick={()=>{setActivate(activate?false:true)}} >|||</button>
       </div>
-      <div className='lnks'>
+      <div className={'lnks ' + (activate?"activate ":" ")}>
         <ul>
         {lnks?.map((urls)=>{
           return(

@@ -27,6 +27,9 @@ nav.navebar {
 }
 .lnks{
     width: 60%;
+    transition: all 0.3s;
+    right: 0;
+
 }
 .btns button{
     font-size: 1.3rem;
@@ -113,7 +116,19 @@ nav.navebar {
     color: #097cb1;
         }
         .navemob .btns, .navemob .lnks{
-            display: none;
+            width: 0;
+            overflow: hidden;
         }
+      .lnks.activate{
+        position: absolute;
+    height: 100vh;
+    top: 0;
+    background: #ccdee9;
+    z-index: 1111111;
+    width: 82%;
+    right: 0;}
     }
+.lnks.activate ul{
+    flex-direction: column;
+} 
  

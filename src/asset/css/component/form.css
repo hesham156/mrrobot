@@ -1,0 +1,9 @@
+.myform{position: fixed;
+    width: 90%;
+    height: 95vh;
+    background: aliceblue;
+    top: 50%;
+    right: 50%;
+    z-index: 1111111111;
+    border-radius: 10px;
+    transform: translate(50%, -50%);}

@@ -4,13 +4,30 @@
 .myCard{
     border-radius: 10px;
     box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
-    background: white;
+    background: transparent;
     padding: 10px;
     margin: 10px;
 }
 .myCard .btns button{
     padding: 0 25px;
     box-sizing: content-box;
+}
+.myCard.d-flex.justify-content-center.align-items-center.flex-column {
+  border: 1px solid #0386c6;
+  border-radius: 10px;
+}
+.myCard p.text-center {
+  color: white;
+  margin: 20px 2px;
+}
+h2.text-center {
+  color: aliceblue;
+  filter: drop-shadow(0px 8px 3px black);
+}
+section.service.w-100 h2.text-center {
+  font-family: myFirstFont;
+
+
 }
 /* 
 
