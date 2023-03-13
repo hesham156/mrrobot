@@ -11,7 +11,7 @@ const Service = () => {
                 <h2 className='text-center'>SERVICE</h2>
             </div>
              <div className='row justify-content-center'>
-              {myar.map((elm)=>{
+              {myar?.map((elm)=>{
                 return(
                     <Card seo={seo}/>
                 )
