@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Form from './Form'
 
-const Card = ({seo}) => {
+const Card = ({data}) => {
     const [form,setForm] = useState(false)
   return (
     <>
@@ -9,10 +9,12 @@ const Card = ({seo}) => {
     <div className='myCard d-flex justify-content-center align-items-center flex-column'>
         <div className='card-top'>
             <div className='img'>
-            <img className='w-100' src={seo} alt=''/>
+            <img className='w-100' src={data.img} alt=''/>
             </div>
             <div className='des'>
-                <p className='text-center'>تحسين محرّكات البحث (SEO): هي العملية التي يتم من خلالها تحسين موقعك الإلكتروني ليتلاءم بشكل أفضل مع محرّكات البحث. ويُستخدَم هذا المصطلح أيضًا كمسمّى وظيفي</p>
+                <p className='text-center'>{data.type}</p>
+                <p className='text-center'>{data.price}</p>
+
             </div>
         </div>
         <div className='card-bottom btns'>
@@ -20,7 +22,7 @@ const Card = ({seo}) => {
         </div>
     </div>
 </div>
-{form?<Form/>:' '}
+{form?<Form data={data} setForm={setForm}/>:' '}
 </>
   )
 }

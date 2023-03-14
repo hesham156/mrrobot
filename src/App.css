@@ -500,3 +500,10 @@ section{
   padding: 10px;
   height: 100px;
 }
+.des {
+  display: flex;
+  justify-content: space-between;
+}
+.img {
+  min-height: 200px;
+}
