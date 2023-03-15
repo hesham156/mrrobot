@@ -6,6 +6,7 @@ import Aos from 'aos';
 import Service from './Component/Service';
 import Parteners from './Component/Parteners';
 import Customer from './Component/Customer';
+import Start from './Component/Start';
 
 
 function App() {
@@ -27,7 +28,8 @@ Aos.init()
      <Header/>
      <Parteners imgs={imgs}/>
      <Service/>
-   <Customer comments={[3,3,3,3,3,3,3,3,33,]}/>
+     <Customer comments={[1,2,3,4,5,6,7,8]}/>
+     <Start/>
      {/* <ServiceCard/> */}
      {/* <section data-aos="fade-up">
       <div className='container'>
