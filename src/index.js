@@ -10,9 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Elements stripe={stripePromise}>
 
-  // <React.StrictMode>
+  <React.StrictMode>
     <App />
-  // </React.StrictMode>
+ </React.StrictMode>
   </Elements>
 );
 

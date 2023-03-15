@@ -523,3 +523,10 @@ section{
   border-radius: 12px;
     filter: blur(0.5px);
 }
+.des {
+  display: flex;
+  justify-content: space-between;
+}
+.img {
+  min-height: 200px;
+}

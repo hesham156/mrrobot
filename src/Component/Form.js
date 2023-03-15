@@ -1,8 +1,15 @@
 import React from 'react'
 import '../asset/css/component/form.css'
-const Form = () => {
+const Form = ({setForm,data}) => {
   return (
-    <section className='myform'>Form</section>
+    <section className='myform'>
+      <div className='container'>
+        <button onClick={()=>{setForm(false)}} className='btn close'>X</button>
+        <div>
+          <p>{data.type}</p>
+        </div>
+      </div>
+    </section>
   )
 }
 
